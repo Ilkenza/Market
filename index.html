@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Market</title>
+</head>
+<body>
+	<h1>Market</h1>
+
+	<div class="container">
+	  <div class="items">
+		<h2>Vegetables</h2>
+	
+		<div class="single-item">
+		  <img src="https://res.cloudinary.com/dtn85o6up/image/upload/v1657837683/potato_jccx8h.png">
+		  <div class="si-content">
+			<h3>Potato</h3>
+			<p class="price">$4</p>
+		  </div>
+		  <div class="actions">
+			<input type="number" name="quantity" value="0" min="0">
+			<button onclick="addToCart(this)">Add</button>
+		  </div>
+		</div>
+	
+		<div class="single-item">
+		  <img src="https://res.cloudinary.com/dtn85o6up/image/upload/v1657837678/tomato_ouyfbv.png">
+		  <div class="si-content">
+			<h3>Tomato</h3>
+			<p class="price">$5</p>
+		  </div>
+		  <div class="actions">
+			<input type="number" name="quantity" value="0" min="0" max="100">
+			<button onclick="addToCart(this)">Add</button>
+		  </div>
+		</div>
+	
+		<div class="single-item">
+		  <img src="https://res.cloudinary.com/dtn85o6up/image/upload/v1657837693/carrot_aobhtv.png">
+		  <div class="si-content">
+			<h3>Carrot</h3>
+			<p class="price">$3</p>
+		  </div>
+		  <div class="actions">
+			<input type="number" name="quantity" value="0" min="0" max="100">
+			<button onclick="addToCart(this)">Add</button>
+		  </div>
+		</div>
+	
+		<div class="single-item">
+		  <img src="https://res.cloudinary.com/dtn85o6up/image/upload/v1657837698/cabbagee_wcj7sf.png">
+		  <div class="si-content">
+			<h3>Cabbage</h3>
+			<p class="price">$2</p>
+		  </div>
+		  <div class="actions">
+			<input type="number" name="quantity" value="0" min="0" max="100">
+			<button onclick="addToCart(this)">Add</button>
+		  </div>
+		</div>
+	  </div>
+	
+	  <div class="cart">
+		<h2>Basket</h2>
+	
+		<div class="cart-items"></div>
+	
+		<div class="total"></div>
+	  </div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
